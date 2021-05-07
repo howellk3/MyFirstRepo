@@ -1,0 +1,18 @@
+Kents App:Best Company:MAC, WINDOWS:Hello.com:45:First app added
+Alpha app:Best Company:MAC:Company.com:31:Alpha app. Should be first in Alphabetical
+Beta app:Super Company:Platform:Link.com:314:Second aplahabetical
+Delta app:Tesla:MAC:Random.com:7:This is just a great app
+Able app:Super Company:MAC,Windows:FaceBook.com:9:Something about facebook. Lots of ads
+Cat app:Fake Company:Linux:Link.org:5:Gotta love cats on the internet
+Money App:Random Org:Linux:Miamiog.edu:65:$$$
+Off Course App:Hello Company:MAC,Windows:Ethics.com:57:Just for the rich
+Next Big App:Worst Organization:Windows:SuperLink.com:3:This is the next big ting
+Pretty Cool App:Microsoft:Random Platform:SausageLink.com:8:This app is pretty cool
+Xylophone App:Random Name Company:Example Platform:CuffLinks.com:5:Random Description
+Yellow App:IDK Company:MAC:GoldLinks.com:6:Tester App
+Winner App:Superman Company:Random Platform:SuperLinks.com:10:This is a supermanApp
+Rickard App:BatMan Company:MAC:Hi.com:1:Last App
+ZZZ App:Best Company:MAc, LINUX, Windows:Hi.com:2:This is a tester app
+Zeta App:Best Company:MAC:Hello.com:3:This is an example app
+Kent:Howell:1234:Hello.com:45:This is a test
+Kent:Howell:Mac:Hi.com:45:This is a test

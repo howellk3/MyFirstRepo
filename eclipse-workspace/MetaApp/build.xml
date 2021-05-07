@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="MetaApp">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="13"/>
+    <property name="source" value="13"/>
+    <path id="MetaApp.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <path id="run.LogInBase.classpath">
+        <path refid="MetaApp.classpath"/>
+    </path>
+    <path id="run.GenGui.classpath">
+        <path refid="MetaApp.classpath"/>
+    </path>
+    <path id="run.CreateNewLogin.classpath">
+        <path refid="MetaApp.classpath"/>
+    </path>
+    <path id="run.TesterGUI.classpath">
+        <path refid="MetaApp.classpath"/>
+    </path>
+    <path id="run.LoginDriver.classpath">
+        <path refid="MetaApp.classpath"/>
+    </path>
+    <path id="run.AppGui.classpath">
+        <path refid="MetaApp.classpath"/>
+    </path>
+    <path id="run.AppRequest.classpath">
+        <path refid="MetaApp.classpath"/>
+    </path>
+    <path id="run.hello.classpath">
+        <path refid="MetaApp.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="MetaApp.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="LogInBase">
+        <java classname="LogInBase" failonerror="true" fork="yes">
+            <classpath refid="run.LogInBase.classpath"/>
+        </java>
+    </target>
+    <target name="GenGui">
+        <java classname="GenGui" failonerror="true" fork="yes">
+            <classpath refid="run.GenGui.classpath"/>
+        </java>
+    </target>
+    <target name="CreateNewLogin">
+        <java classname="CreateNewLogin" failonerror="true" fork="yes">
+            <classpath refid="run.CreateNewLogin.classpath"/>
+        </java>
+    </target>
+    <target name="TesterGUI">
+        <java classname="TesterGUI" failonerror="true" fork="yes">
+            <classpath refid="run.TesterGUI.classpath"/>
+        </java>
+    </target>
+    <target name="LoginDriver">
+        <java classname="LoginDriver" failonerror="true" fork="yes">
+            <classpath refid="run.LoginDriver.classpath"/>
+        </java>
+    </target>
+    <target name="AppGui">
+        <java classname="AppGui" failonerror="true" fork="yes">
+            <classpath refid="run.AppGui.classpath"/>
+        </java>
+    </target>
+    <target name="AppRequest">
+        <java classname="AppRequest" failonerror="true" fork="yes">
+            <classpath refid="run.AppRequest.classpath"/>
+        </java>
+    </target>
+    <target name="hello">
+        <java classname="hello" failonerror="true" fork="yes">
+            <classpath refid="run.hello.classpath"/>
+        </java>
+    </target>
+</project>
